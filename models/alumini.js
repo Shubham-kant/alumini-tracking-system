@@ -16,8 +16,6 @@ const alumniSchema=new mongoose.Schema({
     branch:{
         type:String,
         required:true
-        
-
     },
     address:{
         type:String,
@@ -44,7 +42,6 @@ const alumniSchema=new mongoose.Schema({
     batch:{
         type:Number,
         required:true
-
     },
     dob:{
         type:String,

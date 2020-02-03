@@ -3,7 +3,7 @@ const router=express.Router();
 const homeController=require('../controllers/home_controller.js');
 
 
-app.use(express.static('assets'));
+
 router.get('/',homeController.home);
 
 
