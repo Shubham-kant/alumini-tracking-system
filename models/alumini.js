@@ -5,6 +5,11 @@ const alumniSchema=new mongoose.Schema({
         required:true,
         unique:true
     },
+    password:{
+        type:String,
+        required:true
+
+    },
     name:{
         type:String,
         required:true
@@ -32,6 +37,7 @@ const alumniSchema=new mongoose.Schema({
         required:true
     },
     avatar:{
+        type:String
 
     },
     sex:{
