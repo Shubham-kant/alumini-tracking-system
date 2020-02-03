@@ -1,0 +1,14 @@
+{
+  "name": "alumini-tracking-system",
+  "version": "1.0.0",
+  "description": "track the alumini of various colleges",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shubham",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
