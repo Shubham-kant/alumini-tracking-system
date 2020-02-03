@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Link for Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ <!-- Link for Sign up StyleSheet -->
+ <link rel="stylesheet" href="./sign_up.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script src="https://kit.fontawesome.com/e2169f0192.js" crossorigin="anonymous"></script>
+
+ <title>Sign up</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-inverse navbar-expand-lg">
+    <div class="container-fluid">
+      <!-- Toggle button  -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#links" >
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <!-- Brand  -->
+      <div class="navbar-header">
+        <a href="/index.html">
+          <img src="/Assets/img/logo_of_goa.png" alt="Goa logo" class="navbar-brand">
+          <h2 class="text-dark navbar-brand pt-3">University college of GOA</h2>
+        </a>
+      </div>
+
+      <!-- Links -->
+      <div class="navbar-collapse collapse" id="links">
+        <ul class="nav navbar-nav pl-5">
+          <li class=" nav-item">
+            <a href="/index.html" class="nav-link active border-2 pl-2">Home</a>
+          </li>
+
+          <li class=" nav-item">
+            <a href="/Directorate Login/Sign in/sign_in.html" class="nav-link"><span class="fa fa-sign-in"></span>Directorate Login</a>
+          </li>
+
+        <li class="nav-item" id="drop">
+          <div class="dropdown">
+            <a href="#" class="nav-link" data-toggle="dropdown">
+              <span class="fa fa-caret-down"></span>
+              College SignUp
+            </a>
+        
+            <div class="dropdown-menu">
+              <a href="/College Login/Sign in/sign_in.html" class="dropdown-item">Sign_in</a>
+              <a href="/College Login/Sing up/Sign_ups.html" class="dropdown-item">Sign_up</a>
+            </div>
+          </div>
+        </li>
+
+          <li class="nav-item" id="drop">
+            <div class="dropdown">
+              <a href="#" class="nav-link" data-toggle="dropdown">
+                <span class="fa fa-caret-down"></span>
+                Alumni Login
+              </a>
+
+              <div class="dropdown-menu">
+                <a href="/Sign in/sign_in.html" class="dropdown-item">Sign_in</a>
+                <a href="/Sing up/Sign_ups.html" class="dropdown-item">Sign_up</a>
+              </div>
+            </div>
+          </li>
+
+          <li class=" nav-item">
+            <a href="/TheEventBootstrapTemplate/index.html" class="nav-link bg-danger text-white pl-2">Events</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+  <!-- Form details -->
+ <form action="#" id="form">
+  <!-- Getting Account information -->
+  <div class="cont" id="account-info">
+    <h1>College SignUp</h1>
+    <div class="input-flex">
+      <i class="fas fa-user-tie" id="u"></i>
+      <input type="text" name="Username" id="username" placeholder="Username" required>
+      <i id="user-check" class = "indicator">&#33;</i>
+    </div>
+
+    <div class="input-flex">
+      <i class="fa fa-envelope" aria-hidden="true" id="e"></i>
+      <input type="email" name="Email" id="email" placeholder="Email" required>
+    </div>
+
+    <div class="input-flex">
+      <i class="fas fa-unlock-alt" id="p"></i>
+     <input type="password" name="Password" id="password" placeholder="Password" required>
+     <i id="password-check" class="indicator">&#33;</i>
+    </div>
+
+    <div class="input-flex">
+     <i class="fas fa-unlock-alt" id="rp"></i>
+     <input type="password" name="Re-Password" id="re-password" placeholder="Confirm Password" required>
+      <i id="re-password-check"class = "indicator">&#33;</i>
+    </div>
+    
+    <div class="input-flex">
+      <i class="fas fa-user-tie" id="rep-name"></i>
+      <input type="text"  id="rep-name" placeholder="enter representative name" required>
+       <i id="rep-name"class = "indicator">&#33;</i>
+     </div>
+    
+     <div class="input-flex">
+      <i class="fas fa-user-tie" id="college-id"></i>
+      <input type="text"  id="college-id" placeholder="enter college id" required>
+       <i id="college-id"class = "indicator">&#33;</i>
+     </div>
+    
+     <div class="input-flex">
+      <i class="fa fa-address-card" id="contact"></i>
+      <input type="text"  id="contact" placeholder="enter contact" required>
+       <i id="contact"class = "indicator">&#33;</i>
+     </div>
+    
+     <div class="input-flex">
+      <i class="fa fa-home" id="address"></i>
+      <input type="text"  id="address" placeholder="enter address" required>
+       <i id="address"class = "indicator">&#33;</i>
+     </div>
+     
+     <div class="input-flex">
+      <i class="fa fa-envelope" id="college-email"></i>
+      <input type="text"  id="college-email" placeholder="enter college email" required>
+       <i id="college-email"class = "indicator">&#33;</i>
+     </div>
+    <button type="submit" class="btn btn-danger">Submit</button>
+  </div>
+ </form>
+
+ <script src="./sign_up.js"></script>
+</body>
+
+
+
+</html>
