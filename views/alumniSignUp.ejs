@@ -1,0 +1,174 @@
+<nav class="navbar navbar-inverse navbar-expand-lg">
+    <div class="container-fluid">
+      <!-- Toggle button  -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#links" >
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <!-- Brand  -->
+      <div class="navbar-header">
+        <a href="/index.html">
+          <img src="/Assets/img/logo_of_goa.png" alt="Goa logo" class="navbar-brand">
+          <h2 class="text-dark navbar-brand pt-3">Alumni Tracking System</h2>
+        </a>
+      </div>
+
+      <!-- Links -->
+      <div class="navbar-collapse collapse" id="links">
+        <ul class="nav navbar-nav pl-5">
+          <li class=" nav-item">
+            <a href="/index.html" class="nav-link active border-2 pl-2">Home</a>
+          </li>
+
+          <li class=" nav-item">
+            <a href="/Directorate Login/Sign in/sign_in.html" class="nav-link"><span class="fa fa-sign-in"></span>Directorate Login</a>
+          </li>
+
+          <li class="nav-item" id="drop">
+            <div class="dropdown">
+              <a href="#" class="nav-link" data-toggle="dropdown">
+                <span class="fa fa-caret-down"></span>
+                College Login
+              </a>
+          
+              <div class="dropdown-menu">
+                <a href="/College Login/Sign in/sign_in.html" class="dropdown-item">Sign_in</a>
+                <a href="/College Login/Sing up/Sign_ups.html" class="dropdown-item">Sign_up</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item" id="drop">
+            <div class="dropdown">
+              <a href="#" class="nav-link" data-toggle="dropdown">
+                <span class="fa fa-caret-down"></span>
+                Alumni Login
+              </a>
+
+              <div class="dropdown-menu">
+                <a href="/Sign in/sign_in.html" class="dropdown-item">Sign_in</a>
+                <a href="/Sing up/Sign_ups.html" class="dropdown-item">Sign_up</a>
+              </div>
+            </div>
+          </li>
+
+          <li class=" nav-item">
+            <a href="/TheEventBootstrapTemplate/index.html" class="nav-link bg-danger text-white pl-2">Events</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- <i class="fa fa-times" aria-hidden="true"></i> -->
+ <!-- Form details --> <br>
+ <div action="#" id="form">
+  <!-- Getting Account information -->
+  <div class="cont" id="account-info">
+    <h1>Account Login Info</h1>
+
+    <div class="input-flex">
+      <i class="fa fa-envelope" aria-hidden="true" id="e"></i>
+      <input type="email" name="Email" id="email" placeholder="Email" required>
+    </div>
+
+    <div class="input-flex">
+      <i class="fas fa-unlock-alt" id="p"></i>
+     <input type="password" name="Password" id="password" placeholder="Password" required>
+     <i id="password-check" class="indicator">&#33;</i>
+
+    </div>
+
+    <div class="input-flex">
+     <i class="fas fa-unlock-alt" id="rp"></i>
+     <input type="password" name="Re-Password" id="re-password" placeholder="Conform Password" required>
+      <i id="re-password-check"class = "indicator">&#33;</i>
+    </div>
+  </div>
+
+  <!-- Getting Personal information  -->
+  <div class="cont" id="personal-info">
+   <h1>Personal Info</h1>
+   <div class="inp">
+    <input type="text" name="First_Name" id="first-name" placeholder="Name" required>
+    <i id="first-name-check"class = "indicator">&#33;</i>
+   </div>
+
+   <div class="inp">
+     <input type="text" list="gender" required placeholder="Enter Gender">    <i id="first-name-check"class = "indicator">&#33;</i>
+   </div>
+  <datalist id="gender">
+    <option value="Male"></option>
+    <option value="Female"></option>
+    <option value="Other"></option>
+  </datalist>
+
+
+
+   <div class="inp">
+    <input type="number" name="Phone" id="phone" placeholder="Phone No +91" required>
+    <i id="phone-check"class = "indicator">&#33;</i>
+   </div>
+
+  <div class="inp">
+    <input type="text" list="college-name" name="College" id="ug-college-name" required placeholder="College Name">
+    <i id="ug-college-name-check" class="indicator">&#33;</i>
+  </div>
+
+  <datalist id="college-name">
+    <option value="University College of Engineering(BIT campus)"></option>
+    <option value="Anna University(CEG campus)"></option>
+  </datalist>
+
+   <div class="ug">
+    <div class="inp">
+     <input type="text" list="ug-name" name="Ug_course" id="ug-course" placeholder="UG Course Name" required><i id="ug-course-check"class = "indicator">&#33;</i>
+    </div>
+
+    <datalist id="ug-name">
+      <option value="B.E.Computer Science And Engineering"></option>
+      <option value="B.E.Civil Engineering"></option>
+      <option value="B.E.Electrical And Electronic Engineering"></option>
+      <option value="B.E.Mechanical Engineering"></option>
+      <option value="B.E.Information Technology"></option>
+      <option value="B.E.Aeronautical Engineering"></option>
+      <option value="B.E.Electronics and Communication Engineering"></option>
+      <option value="B.E.Electronics and Instrumentation Engineering"></option>
+      <option value="B.E.Mechatronics Engineering"></option>
+      <option value="B.E.Automobile Engineering"></option>
+      <option value="B.E.Chemical Engineering"></option>
+      <option value="B.E.Biotechnology"></option>
+      <option value="B.E.Biomedical Engineering"></option>
+    </datalist>
+
+
+    <div class="inp">
+     <input min = "1950" max="2025" type="Number" name="Year_of_ug" id="year-of-ug"  placeholder="Year of Passing">
+     <i id="year-of-ug-check"class = "indicator">&#33;</i>
+    </div>
+   </div>
+
+
+   <div class="inp">
+    <input type="text" name="Country_of_residence" id="country-of-residence" placeholder="Country of Residence" required>
+    <i id="country-of-residence-check" class="indicator">&#33;</i>
+   </div>
+
+   <div class="inp"><input type="text" name="" id="" placeholder="DOB"> <i id="year-of-ug-check"class = "indicator">&#33;</i></div>
+   <div class="inp"><input type="date" name="" id="one"></div>
+
+
+  <div class="inp">
+    <input type="text" name="Home" id="home-town" placeholder="Address" required>
+    <i id="home-town-check"class = "indicator">&#33;</i>
+  </div>
+  <div class="inp">
+    <input class="form-group"  type="file" name="prod_image">
+    </div>
+  <button type="submit" class = "btn btn-danger">Submit</button>
+
+
+</div>
+  </div>
+ </form>
+
+ <script src="./sign_up.js"></script>
