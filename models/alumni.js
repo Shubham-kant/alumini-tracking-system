@@ -41,8 +41,7 @@ const alumniSchema=new mongoose.Schema({
 
     },
     sex:{
-        type:String,
-        required:true
+        type:String
 
     },
     batch:{

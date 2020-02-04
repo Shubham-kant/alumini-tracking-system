@@ -5,7 +5,8 @@ const homeController=require('../controllers/home_controller.js');
 
 
 router.get('/',homeController.home);
+router.use('/alumni',require('./alumni'));
 
 
-console.log('router.express is working....');
+console.log('router express is working....');
 module.exports=router; 

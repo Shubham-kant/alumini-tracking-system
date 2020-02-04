@@ -61,26 +61,27 @@
   </nav>
 <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
  <!-- Form details --> <br>
- <div action="#" id="form">
+ <form  action="/alumni/create" method="POST">
+ <div  id="form">
   <!-- Getting Account information -->
   <div class="cont" id="account-info">
     <h1>Account Login Info</h1>
 
     <div class="input-flex">
       <i class="fa fa-envelope" aria-hidden="true" id="e"></i>
-      <input type="email" name="Email" id="email" placeholder="Email" required>
+      <input type="email" name="email" id="email" placeholder="email" required>
     </div>
 
     <div class="input-flex">
       <i class="fas fa-unlock-alt" id="p"></i>
-     <input type="password" name="Password" id="password" placeholder="Password" required>
+     <input type="password" name="password" id="password" placeholder="Password" required>
      <i id="password-check" class="indicator">&#33;</i>
 
     </div>
 
     <div class="input-flex">
      <i class="fas fa-unlock-alt" id="rp"></i>
-     <input type="password" name="Re-Password" id="re-password" placeholder="Conform Password" required>
+     <input type="password" name="confirm_password" id="re-password" placeholder="Confirm Password" required>
       <i id="re-password-check"class = "indicator">&#33;</i>
     </div>
   </div>
@@ -89,14 +90,14 @@
   <div class="cont" id="personal-info">
    <h1>Personal Info</h1>
    <div class="inp">
-    <input type="text" name="First_Name" id="first-name" placeholder="Name" required>
+    <input type="text" name="name" id="name" placeholder="Name" required>
     <i id="first-name-check"class = "indicator">&#33;</i>
    </div>
 
    <div class="inp">
      <input type="text" list="gender" required placeholder="Enter Gender">    <i id="first-name-check"class = "indicator">&#33;</i>
    </div>
-  <datalist id="gender">
+  <datalist name="gender" id="gender" >
     <option value="Male"></option>
     <option value="Female"></option>
     <option value="Other"></option>
@@ -105,12 +106,12 @@
 
 
    <div class="inp">
-    <input type="number" name="Phone" id="phone" placeholder="Phone No +91" required>
+    <input type="number" name="phone" id="phone" placeholder="Phone No +91" required>
     <i id="phone-check"class = "indicator">&#33;</i>
    </div>
 
   <div class="inp">
-    <input type="text" list="college-name" name="College" id="ug-college-name" required placeholder="College Name">
+    <input type="text" list="college-name" name="college" id="ug-college-name" required placeholder="College Name">
     <i id="ug-college-name-check" class="indicator">&#33;</i>
   </div>
 
@@ -121,10 +122,11 @@
 
    <div class="ug">
     <div class="inp">
-     <input type="text" list="ug-name" name="Ug_course" id="ug-course" placeholder="UG Course Name" required><i id="ug-course-check"class = "indicator">&#33;</i>
+      
+      <input type="text" list="ug-name" name="branch" id="ug-course" placeholder="UG Course Name" required><i id="ug-course-check"class = "indicator">&#33;</i>
     </div>
 
-    <datalist id="ug-name">
+    <datalist id="ug-name" name="branch">
       <option value="B.E.Computer Science And Engineering"></option>
       <option value="B.E.Civil Engineering"></option>
       <option value="B.E.Electrical And Electronic Engineering"></option>
@@ -142,27 +144,27 @@
 
 
     <div class="inp">
-     <input min = "1950" max="2025" type="Number" name="Year_of_ug" id="year-of-ug"  placeholder="Year of Passing">
+     <input min = "1950" max="2025" type="number" name="batchyear" id="year-of-ug"  placeholder="Year of Passing">
      <i id="year-of-ug-check"class = "indicator">&#33;</i>
     </div>
    </div>
 
 
    <div class="inp">
-    <input type="text" name="Country_of_residence" id="country-of-residence" placeholder="Country of Residence" required>
+    <input type="text" name="country" id="country-of-residence" placeholder="Country of Residence" required>
     <i id="country-of-residence-check" class="indicator">&#33;</i>
    </div>
 
-   <div class="inp"><input type="text" name="" id="" placeholder="DOB"> <i id="year-of-ug-check"class = "indicator">&#33;</i></div>
+   <div class="inp"><input type="text" name="dob" id="" placeholder="DOB"> <i id="year-of-ug-check"class = "indicator">&#33;</i></div>
    <div class="inp"><input type="date" name="" id="one"></div>
 
 
   <div class="inp">
-    <input type="text" name="Home" id="home-town" placeholder="Address" required>
+    <input type="text" name="address" id="home-town" placeholder="Address" required>
     <i id="home-town-check"class = "indicator">&#33;</i>
   </div>
   <div class="inp">
-    <input class="form-group"  type="file" name="prod_image">
+    <!-- <input class="form-group"  type="file" name="avatar"> -->
     </div>
   <button type="submit" class = "btn btn-danger">Submit</button>
 
