@@ -1,5 +1,5 @@
 
-<link rel="stylesheet" href="./Alumni_home.css">
+<link rel="stylesheet" href="/css/Alumni_home.css">
 
 <!------ Include the above in your HEAD tag ---------->
 
@@ -18,7 +18,7 @@
                     <div class="col-md-6">
                         <div class="profile-head">
                                     <h5>
-                                        Kshiti Ghelani
+                                        <%= user.name %>
                                     </h5>
                                     <h6>
                                         Web Developer and Designer
@@ -58,7 +58,7 @@
                                                 <label>Name</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>Kshiti Ghelani</p>
+                                                <p><%= user.name %></p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -66,7 +66,7 @@
                                                 <label>Email</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>kshitighelani@gmail.com</p>
+                                                <p><%= user.email %></p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -74,7 +74,7 @@
                                                 <label>Phone</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>123 456 7890</p>
+                                                <p><%= user.phone %></p>
                                             </div>
                                         </div>
                                         <div class="row">

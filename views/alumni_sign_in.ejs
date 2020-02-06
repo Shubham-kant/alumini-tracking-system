@@ -1,6 +1,17 @@
-<form>
-    <input type="email" name="email" required>
-    <input type="password" name="password" required>
-    <input value="submit"  required>
-
-</form>
+<link rel="stylesheet" href="/css/alumni_sign_in.css"> 
+<div id="sign-in-page">
+    <form action="/alumni/create-session" method="POST">
+        <h2>Sign in</h2>
+        <p id="google-sign-in">
+            <a href="#"><img src="/images/google.png" height="30" width="30"><span> Continue with Google</span></a>
+        </p>
+            <input name="email" type="email" placeholder="Your Email-id" required>
+            <input name="password" type="password" placeholder="Password" required>
+            <input type="submit" value="Sign In">
+        <p id="already-account">
+        <span>Don't have an account?</span> 
+        <a href="/alumni/sign-up">Sign Up</a>
+        <p>
+    </form>
+     
+    </div>

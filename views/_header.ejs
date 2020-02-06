@@ -1,4 +1,71 @@
-<link  rel="stylesheet" href="/css/footer.css">
-<header>
-    header
-</header>
+
+<nav class="navbar navbar-inverse navbar-expand-lg">
+    <div class="container-fluid">
+      <!-- Toggle button  -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#links" >
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <!-- Brand  -->
+      <div class="navbar-header">
+        <a href="/">
+          <img src="/Assets/img/logo_of_goa.png" alt="Goa logo" class="navbar-brand">
+          <h2 class="text-dark navbar-brand pt-3">Alumni Tracking System</h2>
+        </a>
+      </div>
+
+      <!-- Links -->
+      <div class="navbar-collapse collapse" id="links">
+        <ul class="nav navbar-nav pl-5">
+          <li class=" nav-item">
+            <a href="/" class="nav-link active border-2 pl-2">Home</a>
+          </li>
+
+          
+
+        <li class="nav-item" id="drop">
+            <div class="dropdown">    
+                <a href="#" class="dropdown-item">College Sign in</a>
+            </div>
+            <div class="dropdown">    
+                <a href="#" class="dropdown-item">College Sign up</a>
+            </div>
+            
+            
+
+        </li>
+            
+       
+            
+
+          <li class="nav-item" id="drop">
+            <%  if(!locals.user){   %>
+            <div class="dropdown">
+                <a href="/alumni/sign-in" class="nav-link">Alumini Signin</a>
+                <a href="/alumni/sign-up" class="nav-link">Alumini Signup</a>
+              
+            </div>
+        <% }else{ %>
+            <div class="dropdown">
+                <a href="/alumni/sign-out" class="nav-link">
+                  
+                  sign out
+                </a>
+                <a href="/alumni/profile" class="nav-link">
+                  
+                    <%= user.name %>
+                  </a>
+
+            </div>
+
+
+        <% } %>
+          </li>
+
+          <li class=" nav-item">
+            <a href="#" class="nav-link bg-danger text-white pl-2">Events</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

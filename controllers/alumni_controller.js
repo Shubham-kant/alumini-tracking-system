@@ -1,10 +1,21 @@
 const Alumni=require('../models/alumni');
 const val='name-123'
+module.exports.createSession=function(req,res){
+    return res.redirect('/');
+}
 module.exports.signUp=function(req,res){
+    if(req.isAuthenticated()){
+        return res.redirect('/alumni/profile');
+    }
     return res.render('alumniSignUp');
 }
-
+module.exports.profile=function(req,res){
+    return res.render('alumni_home');
+}
 module.exports.signIn=function(req,res){
+    if(req.isAuthenticated()){
+        return res.redirect('/alumni/profile');
+    }
     return res.render('alumni_sign_in');
 }
 
@@ -61,4 +72,8 @@ module.exports.create=function(req,res){
 
 
 
+}
+module.exports.destroySession=function(req,res){
+    req.logout();
+    return res.redirect('/');
 }
